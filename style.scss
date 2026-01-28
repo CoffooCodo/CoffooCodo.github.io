@@ -250,6 +250,14 @@ nav {
   border-bottom: 1px solid $lightGray;
 }
 
+.posts > .post p {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	}
+
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
@@ -268,13 +276,6 @@ nav {
     font-style: italic;
   }
 
-.posts > .post p {
-	display: -webkit-box;
-	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	}
 
   .comments {
     margin-top: 10px;
