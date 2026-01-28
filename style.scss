@@ -278,10 +278,11 @@ nav {
 }
 
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+	margin: 50px auto 0; /* margin-top 保持 50px，auto 让整体居中 */
+	max-width: 1000px;   /* 设置最大宽度 */
+	border-top: 2px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	background-color: $lightGray;
 }
 
 footer {
