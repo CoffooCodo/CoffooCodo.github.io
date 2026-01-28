@@ -337,14 +337,14 @@ html, body {
 
 @include mobile {
   html, body {
-    overflow: auto;    /* 手机端建议恢复正常滚动，体验更好 */
-    height: auto;
+    overflow-y: auto;    /* 手机端建议恢复正常滚动，体验更好 */
+	overflow-x: hidden; /* 防止手机端左右乱晃 */
+	  height: auto;
   }
   #main {
     overflow-y: visible;
   }
 }
-
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
