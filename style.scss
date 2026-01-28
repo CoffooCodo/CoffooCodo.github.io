@@ -352,14 +352,19 @@ html, body {
 }
 
 @include mobile {
+  .layout-post .wrapper-masthead {
+    display: none;
+  }
+
   html, body {
-    overflow-y: auto;    /* 手机端建议恢复正常滚动，体验更好 */
-	overflow-x: hidden; /* 防止手机端左右乱晃 */
-	  height: auto;
+    overflow-y: auto;    /* 手机端建议恢复正常滚动 */
+    overflow-x: hidden; 
+    height: auto;
   }
-  #main {
-    overflow-y: visible;
-  }
+  
+#main {
+	overflow-y: visible;
+    margin-top: 10px; }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
