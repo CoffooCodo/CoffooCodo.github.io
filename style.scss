@@ -288,7 +288,12 @@ nav {
 footer {
 	padding: 20px 0;
 	text-align: center;
-}
+	.copyright {
+    font-size: 14px;      /* 字号稍微小一点，显得更精致 */
+    color: $gray;         /* 使用灰色，不喧宾夺主 */
+    margin-bottom: 10px;  /* 如果放在图标上方，加点间距 */
+    font-family: $helveticaNeue;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
