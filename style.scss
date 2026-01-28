@@ -279,14 +279,13 @@ nav {
 
 .wrapper-footer {
 	margin: 50px auto 0; /* margin-top 保持 50px，auto 让整体居中 */
-	max-width: 1000px;   /* 设置最大宽度 */
 	border-top: 2px solid #ddd;
 	border-bottom: 2px solid #ddd;
 	background-color: $lightGray;
 }
 
 footer {
-	padding: 7px 0;
+	padding: 5px 0;
 	text-align: center;
 	.copyright {
     font-size: 14px;      /* 字号稍微小一点，显得更精致 */
@@ -295,7 +294,11 @@ footer {
     font-family: $helveticaNeue;
   }
 }
+
+/**************/
 /* 滚动条布局 */
+/**************/
+
 html, body {
   height: 100%;       /* 强制占据整个屏幕高度 */
   margin: 0;
@@ -330,6 +333,16 @@ html, body {
 }
 #main::-webkit-scrollbar-track {
   background: transparent; /* 滚动条轨道透明 */
+}
+
+@include mobile {
+  html, body {
+    overflow: auto;    /* 手机端建议恢复正常滚动，体验更好 */
+    height: auto;
+  }
+  #main {
+    overflow-y: visible;
+  }
 }
 
 
