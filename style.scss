@@ -165,9 +165,9 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
 
   @include mobile {
     float: none;
@@ -266,7 +266,8 @@ nav {
   }
 
   .read-more {
-	color: #333333;
+	color: #888888;      /* 灰色，你可以根据喜好调整深浅 */
+	font-weight: bold;   /* 加粗 */
     text-transform: uppercase;
     font-size: 15px;
   }
