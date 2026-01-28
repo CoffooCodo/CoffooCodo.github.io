@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+A personal blog sharing my journey through research, work, and daily life.
 
-### More Information
+### Hobbies
 
-A place to include any other types of information that you'd like to include about yourself.
+Gaming, hiking, and surfing the internet.
 
-### Contact me
+### Contact
 
-[email@domain.com](mailto:email@domain.com)
+[1135560163@qq.com](mailto:1135560163@qq.com)
