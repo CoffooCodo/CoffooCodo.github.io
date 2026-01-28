@@ -190,7 +190,7 @@ img {
 }
 
 .site-name {
-	margin-top: 55px;   /* 数值越大，向下移得越多 */
+	margin-top: 57px;   /* 数值越大，向下移得越多 */
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
@@ -215,15 +215,15 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  margin-top: 57px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 25px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 22px;
   }
 
   a {
