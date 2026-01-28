@@ -27,9 +27,6 @@ body {
   margin: 0 auto;
   max-width: 1000px;
   width: 100%;
-	background-color: #f9f9f9;  /* 设置容器背景颜色（浅灰色/白色） */
-	border: 1.5px solid #dddddd;  /* 设置 1 像素宽的实线灰色边框 */
-	border-radius: 8px;  /* 可选：让边框圆角化，看起来更现代 */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -314,10 +311,13 @@ html, body {
   flex: 1;
   overflow: auto;
   width: 100%;       /* 让容器宽度撑满，滚动条就会在最右边 */
-  padding: 20px 0;   
+  padding: 20px;   
   display: flex;
   flex-direction: column;
   align-items: stretch; /* 让内部内容依然保持居中 */
+	background-color: #f9f9f9;
+	border: 1.5px solid #dddddd;
+	border-radius: 8px;
 }
 
 /* 固定在底部的容器 */
