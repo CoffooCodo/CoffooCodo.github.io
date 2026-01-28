@@ -309,12 +309,12 @@ html, body {
 
 #main {
   flex: 1;
-  overflow-y: auto;
+  overflow: auto;
   width: 100%;       /* 让容器宽度撑满，滚动条就会在最右边 */
   padding: 20px 0;   
   display: flex;
   flex-direction: column;
-  align-items: center; /* 让内部内容依然保持居中 */
+  align-items: stretch; /* 让内部内容依然保持居中 */
 }
 
 /* 固定在底部的容器 */
