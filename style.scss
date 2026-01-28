@@ -24,10 +24,11 @@ body {
 }
 
 .container {
-  margin: 0 aotu;
+  margin: 0 auto;
   max-width: 1000px;
   padding: 0 20px;
   width: 100%;
+	box-sizing: border-box; /* 关键：确保 padding 不会额外增加宽度 */
 }
 
 h1, h2, h3, h4, h5, h6 {
