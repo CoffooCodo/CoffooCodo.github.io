@@ -114,8 +114,10 @@ img {
 }
 
 .date {
-  font-style: italic;
+  text-align: right;      /* 设置靠右对齐 */
+  font-style: normal;    /* 取消斜体，设置为正常体 */
   color: $gray;
+	display: block;        /* 确保它是块级元素以支持对齐 */
 }
 
 // Specify the color of the selection
