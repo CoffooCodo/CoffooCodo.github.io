@@ -51,5 +51,25 @@
     </div>
 
     {% include analytics.html %}
+  
+  <button id="backToTop" title="Go to top">↑</button>
+  <script>
+    // 获取按钮
+    var mybutton = document.getElementById("backToTop");
+        // 当用户向下滚动 200px 时，显示按钮
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // 点击按钮时，跳转到页面顶部
+    mybutton.onclick = function() {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+  </script>
+  
   </body>
 </html>
