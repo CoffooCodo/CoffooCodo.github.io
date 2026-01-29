@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -44,7 +45,11 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.name }}. All rights reserved.</p>
+          <p class="copyright">© {{ "now" | date: "%Y" }} {{ site.name }}. All rights reserved.
+            <span id="busuanzi_container_site_pv" style="margin-left: 20px; font-size: 0.8em; color: #666;">
+              <i class="fa fa-eye"></i> 访问量 <span id="busuanzi_value_site_pv"></span>
+            </span>
+          </p>
           {% include svg-icons.html %}
         </footer>
       </div>
@@ -72,6 +77,5 @@
       window.scrollTo({top: 0, behavior: 'smooth'});
     };
   </script>
-  
-  </body>
+</body>
 </html>
