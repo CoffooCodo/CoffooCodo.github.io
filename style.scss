@@ -241,9 +241,10 @@ nav {
 	text-decoration: underline;
 
     @include mobile {
-		margin: 0 8px;
-		color: $blue;
+		margin: 0 4px;
+		color: $black;
 		font-size: 18px;
+		white-space: nowrap;
     }
   }
 }
